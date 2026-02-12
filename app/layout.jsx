@@ -1,4 +1,5 @@
 import "./index.css"
+import PropTypes from "prop-types"
 
 export const metadata = {
   title: "San Valentín",
@@ -17,4 +18,8 @@ export default function RootLayout({ children }) {
       <body>{children}</body>
     </html>
   )
+}
+
+RootLayout.propTypes = {
+  children: PropTypes.node
 }
